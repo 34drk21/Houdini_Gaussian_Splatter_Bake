@@ -1,0 +1,1 @@
+# Houdini_Gaussian_Splatter_Bake
