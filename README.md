@@ -78,6 +78,23 @@ pyro2gs --config config.json
 }
 ```
 
+
+### GUIで実行（File > Import あり）
+
+```bash
+pyro2gs-gui
+```
+
+GUIは一般的な DCC ツール風に、左上メニューの **File** から操作できます。
+
+- `File > Import NPZ Sequence...` : 入力フォルダを読み込み
+- `File > Load Config...` : 既存 JSON 設定を読み込み
+- `File > Save Config...` : 現在パラメータを JSON 保存
+- `File > Export...` : フレーム範囲を一括エクスポート
+
+タブ構成は仕様書に合わせて `Sim Input / Lookdev / GS Convert / Export` を用意しています。
+`Preview Current Frame` で読み込み〜Lookdev〜点群化までの結果（点数）を即確認できます。
+
 ### 出力
 
 - `gs_points_####.npz`

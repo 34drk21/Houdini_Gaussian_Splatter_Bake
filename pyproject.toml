@@ -17,6 +17,7 @@ vdb = ["pyopenvdb"]
 
 [project.scripts]
 pyro2gs = "pyro2gs.cli:main"
+pyro2gs-gui = "pyro2gs.gui:main"
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
