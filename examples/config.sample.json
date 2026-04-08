@@ -1,0 +1,40 @@
+{
+  "input": {
+    "input_path": "./input_npz",
+    "frame_start": 1,
+    "frame_end": 8,
+    "frame_step": 1,
+    "backend": "npz",
+    "field_mapping": {
+      "density": "density",
+      "flame": "flame",
+      "temperature": "temperature",
+      "vel": "vel"
+    }
+  },
+  "lookdev": {
+    "density_gain": 1.2,
+    "density_bias": 0.0,
+    "opacity_gain": 1.0,
+    "opacity_gamma": 1.0,
+    "exposure": 0.0,
+    "scatter_color": [0.8, 0.8, 0.8],
+    "emission_color": [1.0, 0.45, 0.1]
+  },
+  "convert": {
+    "sampling_mode": "voxel_center",
+    "density_threshold": 0.02,
+    "scatter_scale": 4.0,
+    "scale_multiplier": 1.0,
+    "generate_id": true,
+    "random_seed": 42
+  },
+  "export": {
+    "output_path": "./out",
+    "export_sequence": true,
+    "write_metadata": true,
+    "write_debug_json": false
+  },
+  "fps": 24.0,
+  "version": "0.1"
+}
